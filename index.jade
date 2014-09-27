@@ -1,0 +1,63 @@
+html
+  head
+    title Cutting Edge Robotics
+    link(rel="stylesheet", href="assets/css/main.css")
+    script(src='assets/js/app.js')
+  body
+    #wrapper
+      nav
+        a(href='#about-us') About Us
+        a(href='#media') Media
+        a(href='#sponsors') Sponsors
+        a(href='#docs') Docs
+        a(href='#links') Links
+
+
+      a(id='about-us')
+      include includes/_head
+      .caption media
+      a(id='media')
+      iframe(src="assets/img/index.html" style="width:960px;height:360px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0")
+
+      a(id='sponsor-us')
+      .caption sponsors
+      .levels
+          .level-bronze(style='background-color: #715f34')
+            h1 Bronze Level Supporter
+            .price $50
+            .rewards Spot on banner
+            b Sponsors
+            ul
+              li Redmont Properties
+              li Metro Goals
+              li Balch Bingam
+              li Voigt Albernathy
+              li Gallery Services
+              li Luckie
+              li Mtn Brook Sorting Goods
+          .level-silver(style='background-color: silver')
+            h1 Silver Level Contributor
+            .price $100
+            .rewards Smaller spot on t-shirt and banner
+          .level-gold(style='background-color: gold')
+            h1 Gold Level Sponsor
+            .price $250
+            .rewards Large spot on t-shirt and on banner
+          .level-platinum(style='background-color: #cbf2f1')
+            h1 Platinum Level Partner
+            .price $500
+            .rewards Spot on Robot, Top spot on t-shirt, prominent spot on banner
+      .caption special thanks to
+      a(href='http://www.redmontgardens.com/' target='_blank'): img.red(src='assets/img/logos/redmont.gif')
+
+
+      a(id='docs')
+      .caption docs
+
+      a(id='links')
+      .caption links
+      .links
+        a(href='http://best.eng.auburn.edu/' target='_blank') BEST
+        a(href='http://www.mtnbrook.k12.al.us/site/default.aspx?PageID=1' target='_blank') Mountain Brook City Schools
+        a(href='http://www.uab.edu/engineering/home/' target='_blank') UAB Engineering
+        a(href='http://www.vexrobotics.com' target='_blank') VEX Robotics
